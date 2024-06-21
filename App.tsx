@@ -1,10 +1,12 @@
-import { View, Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import { HelloWord } from './src/presentation/screens/HelloWord';
+
 
 export const App = () => {
   return (
-    <View>
-      <Text>Hola React native</Text>
-    </View>
+    <SafeAreaView>
+      <HelloWord />
+    </SafeAreaView>
   );
 };
 
