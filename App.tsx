@@ -1,4 +1,3 @@
-import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { HelloWord } from './src/presentation/screens/HelloWord';
 import { Contador } from './src/presentation/screens/Contador';
