@@ -1,24 +1,27 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from 'react-native';
 
-export const HelloWord = () => {
+interface Props {
+    name: string;
+}
+
+export const HelloWord = ({ name }: Props) => {
     return (
         <View style={styles.contenedor}>
-            <Text style={styles.titulo}>HelloWord</Text>
+            <Text numberOfLines={1} style={styles.titulo}>
+                Hello, {name}
+            </Text>
         </View>
-    )
+    );
 };
-
-
 
 const styles = StyleSheet.create({
     contenedor: {
         flex: 1,
-        justifyContent: "center",
+        justifyContent: 'center',
     },
     titulo: {
-        textAlign: "center",
+        textAlign: 'center',
         fontSize: 30,
-        fontWeight: "bold"
-    }
-
-})
+        fontWeight: 'bold',
+    },
+});

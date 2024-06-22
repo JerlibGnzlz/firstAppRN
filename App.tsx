@@ -1,11 +1,14 @@
+import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { HelloWord } from './src/presentation/screens/HelloWord';
+import { Contador } from './src/presentation/screens/Contador';
 
 
 export const App = () => {
   return (
     <SafeAreaView style={styles.contenedor}>
-      <HelloWord />
+      {/* <HelloWord name={'Jerlib Jose Gonzalez Vega'} /> */}
+      <Contador />
     </SafeAreaView>
   );
 };
@@ -15,6 +18,5 @@ export const App = () => {
 const styles = StyleSheet.create({
   contenedor: {
     flex: 1,
-    backgroundColor: "yellow"
   }
 })
