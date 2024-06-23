@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { View, Text, StyleSheet, } from 'react-native';
 import { PrimaryButton } from '../components';
+import { Button } from 'react-native-paper';
 
 
 
@@ -19,13 +20,13 @@ export const Contador = () => {
                 onLongPress={() => setCount(0)}
             />
 
-
-            <PrimaryButton
-                label="Decrementar"
+            {/* BOTON CON REACT NATIVE PAPER */}
+            <Button
+                mode='contained'
                 onPress={() => setCount(count - 1)}
-                onLongPress={() => setCount(0)}
-
-            />
+                onLongPress={() => setCount(0)}>
+                Decrementar
+            </Button>
         </View >
     )
 };
