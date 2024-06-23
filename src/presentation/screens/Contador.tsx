@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { View, Text, StyleSheet, Pressable, Platform } from 'react-native';
+import { View, Text, StyleSheet, } from 'react-native';
+import { PrimaryButton } from '../components';
 
 
 
@@ -12,28 +13,19 @@ export const Contador = () => {
         <View style={styles.contenedor}>
             <Text style={styles.titulo1}>{count}</Text>
 
-            <Pressable
+            <PrimaryButton
+                label="Incrementar"
                 onPress={() => setCount(count + 1)}
-                onLongPress={() => { setCount(0) }}
-                style={({ pressed }) => [
-                    styles.boton,
-                    pressed && styles.botonPressed
-                ]}
-            >
-                <Text style={styles.titulo}>Incrementar</Text>
-            </Pressable>
+                onLongPress={() => setCount(0)}
+            />
 
-            <Pressable
+
+            <PrimaryButton
+                label="Decrementar"
                 onPress={() => setCount(count - 1)}
+                onLongPress={() => setCount(0)}
 
-                onLongPress={() => { setCount(0) }}
-                style={({ pressed }) => [
-                    styles.boton,
-                    pressed && styles.botonPressed
-                ]}
-            >
-                <Text style={styles.titulo}>Descrementar</Text>
-            </Pressable>
+            />
         </View >
     )
 };
@@ -45,28 +37,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: "center"
     },
-    titulo: {
-        textAlign: 'center',
-        fontSize: 30,
-        fontWeight: 'bold',
-    },
+    // titulo: {
+    //     textAlign: 'center',
+    //     fontSize: 30,
+    //     fontWeight: 'bold',
+    // },
     titulo1: {
         textAlign: 'center',
         fontSize: 100,
         fontWeight: '900',
         color: "black"
     },
-    boton: {
-        backgroundColor: Platform.OS === "android" ? "#5856D6" : "",
-        fontSize: 40,
-        margin: 5,
-        borderRadius: 5,
-        padding: 5,
-        width: 300,
-        textAlign: 'center',
-        fontWeight: '800'
-    },
-    botonPressed: {
-        backgroundColor: "#323181",
-    }
 });
