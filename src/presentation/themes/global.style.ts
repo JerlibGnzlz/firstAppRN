@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { black } from "react-native-paper/lib/typescript/styles/themes/v2/colors";
 
 
@@ -18,6 +18,6 @@ export const globalStyles = StyleSheet.create({
         position: 'absolute',
         margin: 16,
         right: 0,
-        bottom: 0,
+        bottom: Platform.OS === "android" ? 15 : 0,
     },
 })
