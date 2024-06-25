@@ -14,15 +14,14 @@ export const ContadorM3 = () => {
         <View style={globalStyles.contenedor}>
             <Text style={globalStyles.title}>{count}</Text>
 
-            <Icon
+            {/* <Icon
                 name='add-outline'
                 size={40}
-            />
+            /> */}
 
 
             <FAB
-                label="+"
-                icon="add"
+                icon="add-circle-outline"
                 style={globalStyles.fab}
                 onPress={() => setCount(count + 1)}
             />
