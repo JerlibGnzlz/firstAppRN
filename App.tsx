@@ -4,6 +4,7 @@ import { Contador } from './src/presentation/screens/Contador';
 import { PaperProvider } from 'react-native-paper';
 import { ContadorM3 } from './src/presentation/screens/ContadorM3';
 import IonIcon from 'react-native-vector-icons/Ionicons';
+import { BoxObjectModel } from './src/presentation/screens/BoxObjectModel';
 
 
 export const App = () => {
@@ -14,10 +15,11 @@ export const App = () => {
       }}
     >
 
-      <SafeAreaView style={styles.contenedor}>
+      <SafeAreaView style={{ flex: 1 }}>
         {/* <HelloWord name={'Jerlib Jose Gonzalez Vega'} /> */}
         {/* <Contador /> */}
-        <ContadorM3 />
+        {/* <ContadorM3 /> */}
+        <BoxObjectModel />
       </SafeAreaView>
     </PaperProvider>
   );
