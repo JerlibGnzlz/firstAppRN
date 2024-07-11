@@ -10,6 +10,10 @@ export const PosicionScreen = () => {
             <View
                 style={styles.secondBox}
             />
+
+            <View
+                style={styles.tercerBox}
+            />
         </View>
     )
 };
@@ -17,21 +21,38 @@ export const PosicionScreen = () => {
 const styles = StyleSheet.create({
     contenedor: {
         flex: 1,
-        backgroundColor: "green"
+        backgroundColor: "green",
+        // justifyContent: "center",
+        // alignItems: "center"
     },
     firstBox: {
+        position: "absolute",
+        right: 0,
+        backgroundColor: "blue",
         width: 100,
         height: 100,
-        backgroundColor: "blue",
         borderColor: "white",
-        borderWidth: 5
+        borderWidth: 10,
+
     },
     secondBox: {
+        position: "absolute",
+        bottom: 0,
+        backgroundColor: "red",
         width: 100,
         height: 100,
-        backgroundColor: "blue",
         borderColor: "white",
-        borderWidth: 5
+        borderWidth: 10,
+    },
+    tercerBox: {
+        position: "absolute",
+        bottom: 0,
+        right: 0,
+        backgroundColor: "yellow",
+        width: 100,
+        height: 100,
+        borderColor: "white",
+        borderWidth: 10,
     }
 
 })
