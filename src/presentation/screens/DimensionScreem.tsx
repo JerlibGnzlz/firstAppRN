@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         backgroundColor: "purple",
     },
     title: {
-        fontSize: 30,
+        fontSize: 40,
         textAlign: "center"
     }
 })
