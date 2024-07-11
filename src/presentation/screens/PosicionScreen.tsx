@@ -8,7 +8,9 @@ export const PosicionScreen = () => {
                 style={styles.firstBox}
             />
             <View
+
                 style={styles.secondBox}
+
             />
 
             <View
@@ -33,8 +35,8 @@ const styles = StyleSheet.create({
         height: 100,
         borderColor: "white",
         borderWidth: 10,
-
     },
+
     secondBox: {
         position: "absolute",
         bottom: 0,
