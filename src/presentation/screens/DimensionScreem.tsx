@@ -1,10 +1,12 @@
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet, Text, useWindowDimensions } from "react-native";
 import { View } from "react-native";
 import { Dimensions } from 'react-native';
 
-const { height, width } = Dimensions.get('window');
 
 export const DimensionScreem = () => {
+
+    const { height, width } = useWindowDimensions();
+
     return (
         <View>
 
@@ -12,12 +14,16 @@ export const DimensionScreem = () => {
                 <Text>DimensionScreem</Text>
 
                 <View
-                    style={styles.Box}
+                    style={{
+                        ...styles.Box,
+                        width: width * 0.6,
+                        height: height * 0.1
+                    }}
                 />
             </View>
 
-            <Text>
-                w: {width},{"  "}
+            <Text style={styles.title}>
+                w: {width},
                 h: {height}
             </Text>
         </View>
@@ -34,5 +40,9 @@ const styles = StyleSheet.create({
         height: "50%",
         width: "50%",
         backgroundColor: "purple",
+    },
+    title: {
+        fontSize: 30,
+        textAlign: "center"
     }
 })
