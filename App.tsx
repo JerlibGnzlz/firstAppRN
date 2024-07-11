@@ -6,6 +6,7 @@ import { ContadorM3 } from './src/presentation/screens/ContadorM3';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import { BoxObjectModel } from './src/presentation/screens/BoxObjectModel';
 import { DimensionScreem } from './src/presentation/screens/DimensionScreem';
+import { PosicionScreen } from './src/presentation/screens/PosicionScreen';
 
 
 export const App = () => {
@@ -21,7 +22,8 @@ export const App = () => {
         {/* <Contador /> */}
         {/* <ContadorM3 /> */}
         {/* <BoxObjectModel /> */}
-        <DimensionScreem />
+        {/* <DimensionScreem /> */}
+        <PosicionScreen />
       </SafeAreaView>
     </PaperProvider>
   );
