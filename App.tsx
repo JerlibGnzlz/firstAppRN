@@ -5,6 +5,7 @@ import { PaperProvider } from 'react-native-paper';
 import { ContadorM3 } from './src/presentation/screens/ContadorM3';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import { BoxObjectModel } from './src/presentation/screens/BoxObjectModel';
+import { DimensionScreem } from './src/presentation/screens/DimensionScreem';
 
 
 export const App = () => {
@@ -19,7 +20,8 @@ export const App = () => {
         {/* <HelloWord name={'Jerlib Jose Gonzalez Vega'} /> */}
         {/* <Contador /> */}
         {/* <ContadorM3 /> */}
-        <BoxObjectModel />
+        {/* <BoxObjectModel /> */}
+        <DimensionScreem />
       </SafeAreaView>
     </PaperProvider>
   );
