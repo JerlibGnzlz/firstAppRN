@@ -3,10 +3,9 @@ import { StyleSheet, Text, View } from "react-native";
 export const FlexBox = () => {
     return (
         <View style={styles.contenedor}>
-            <View style={styles.box1} />
-            <View style={styles.box2} />
-            <View style={styles.box3} />
-
+            <View style={[styles.box, styles.box1]} />
+            <View style={[styles.box, styles.box2]} />
+            <View style={[styles.box, styles.box3]} />
         </View>
     )
 };
@@ -14,22 +13,28 @@ export const FlexBox = () => {
 const styles = StyleSheet.create({
     contenedor: {
         flex: 1,
-        flexDirection: "column",
         backgroundColor: "gray",
+        flexDirection: "row",
+        justifyContent: "space-evenly",
+        alignItems: "center",
+
+
+    },
+
+    box: {
+        height: 80,
+        width: 80
     },
     box1: {
-        backgroundColor: "yellow",
-        flex: 1,
+        backgroundColor: "yellow"
     },
 
     box2: {
-        backgroundColor: "blue",
-        flex: 1,
+        backgroundColor: "blue"
 
     },
     box3: {
-        backgroundColor: "red",
-        flex: 1,
+        backgroundColor: "red"
     },
     texto: {
         backgroundColor: "green",
