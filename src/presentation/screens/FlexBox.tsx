@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
         width: 100,
     },
     box1: {
+        alignSelf: "center",
         backgroundColor: "yellow",
 
     },
@@ -40,6 +41,7 @@ const styles = StyleSheet.create({
 
     },
     box3: {
+        alignSelf: "center",
         backgroundColor: "red",
 
 
