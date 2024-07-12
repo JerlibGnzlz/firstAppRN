@@ -6,10 +6,20 @@ export const FlexBox = () => {
 
 
         <View style={styles.contenedor}>
-
             <View style={[styles.box, styles.box1]} />
             <View style={[styles.box, styles.box2]} />
             <View style={[styles.box, styles.box3]} />
+            <View style={[styles.box, styles.box1]} />
+            <View style={[styles.box, styles.box2]} />
+            <View style={[styles.box, styles.box3]} />
+            <View style={[styles.box, styles.box1]} />
+            <View style={[styles.box, styles.box2]} />
+            <View style={[styles.box, styles.box3]} />
+            <View style={[styles.box, styles.box1]} />
+            <View style={[styles.box, styles.box2]} />
+            <View style={[styles.box, styles.box3]} />
+
+
         </View >
     )
 };
@@ -19,19 +29,18 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "gray",
         flexDirection: "row",
-        justifyContent: "space-evenly",
+        justifyContent: "space-between",
         alignItems: "stretch",
-
-
+        flexWrap: "wrap",
+        gap: 10
     },
 
     box: {
-        flex: 1,
+        // flex: 1,
         height: 100,
         width: 100,
     },
     box1: {
-        alignSelf: "center",
         backgroundColor: "yellow",
 
     },
@@ -41,7 +50,7 @@ const styles = StyleSheet.create({
 
     },
     box3: {
-        alignSelf: "center",
+        // alignSelf: "center",
         backgroundColor: "red",
 
 
